@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html>
   <head>
@@ -9,7 +10,7 @@
 <body>
 	<div class="contact-form">
 	 <p class="title">ご予約はこちら</p>
-	 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf830m-vNQFCSaSbu_Ts-9ofYkDqfMwkKuo8TgLWR8H5d4NTw/formResponse" method="post">
+	 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf830m-vNQFCSaSbu_Ts-9ofYkDqfMwkKuo8TgLWR8H5d4NTw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
 
 	 	<div class="item">
 	 		<label class="label">お名前</label>
@@ -48,6 +49,19 @@
 </form>
 
 </body>
+
+</html>
+
+<!--↓↓Thanks pages↓↓-->
+<script type="text/javascript">
+  var submitted = false;
+</script>
+<iframe
+  name="hidden_iframe"
+  id="hidden_iframe"
+  style="display: none"
+  onload="if(submitted)  {window.location='https://al4.co.jp/';}"
+></iframe>
 
 <style>
 		*{
@@ -150,4 +164,3 @@
 		cursor: pointer;
 	}
 </style>
-</html>
